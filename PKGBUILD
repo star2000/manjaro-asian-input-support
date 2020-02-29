@@ -3,9 +3,9 @@
 pkgbase=manjaro-asian-input-support
 pkgname=('manjaro-asian-input-support-gtk' 'manjaro-asian-input-support-qt')
 pkgver=2020.02
-pkgrel=1
+pkgrel=2
 arch=('any')
-url="https://manjaro.org"
+url="https://gitlab.manjaro.org/packages/community/manjaro-asian-input-support"
 license=('GPL')
 source=('gtk-variables' 'qt-variables')
 md5sums=('6b7f3d6524febc12dcbe4281fa38f5df'
