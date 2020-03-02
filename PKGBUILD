@@ -2,8 +2,8 @@
 
 pkgbase=manjaro-asian-input-support
 pkgname=('manjaro-asian-input-support-gtk' 'manjaro-asian-input-support-qt')
-pkgver=2020.02
-pkgrel=2
+pkgver=2020.03
+pkgrel=1
 arch=('any')
 url="https://gitlab.manjaro.org/packages/community/manjaro-asian-input-support"
 license=('GPL')
@@ -18,6 +18,7 @@ pkgver() {
 
 package_manjaro-asian-input-support-gtk() {
 pkgdesc='Manjaro asian input support for gtk environment'
+depends=('ibus')
 install=input-support-gtk.install
 	
 	install -Dm644 $srcdir/gtk-variables $pkgdir/usr/share/manjaro-asian-input-support-gtk/gtk-variables
