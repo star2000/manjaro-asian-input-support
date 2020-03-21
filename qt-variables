@@ -1,5 +1,0 @@
-###Add support for asian input method ###
-GTK_IM_MODULE=fcitx 
-QT_IM_MODULE=fcitx 
-XMODIFIERS=@im=fcitx
-###End ###
