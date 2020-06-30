@@ -45,8 +45,6 @@ package_manjaro-asian-input-support-ibus() {
 		'manjaro-asian-input-support-fcitx'
 		'manjaro-asian-input-support-fcitx5'
 	)
-	replaces=('manjaro-asian-input-support-gtk')
-
 	install -Dm644 "$srcdir/enable-ibus.sh" "$pkgdir/etc/profile.d/input-support.sh"
 	install -Dm644 "$srcdir/ibus.desktop" "$pkgdir/etc/xdg/autostart/ibus.desktop"
 }
@@ -70,8 +68,6 @@ package_manjaro-asian-input-support-fcitx() {
 		'manjaro-asian-input-support-fcitx5'
 		'manjaro-asian-input-support-ibus'
 	)
-	replaces=('manjaro-asian-input-support-qt')
-
 	install -Dm644 "$srcdir/enable-fcitx.sh" "$pkgdir/etc/profile.d/input-support.sh"
 }
 
