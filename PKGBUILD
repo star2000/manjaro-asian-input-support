@@ -8,20 +8,18 @@ pkgname=(
 	"$pkgbase-ibus"
 )
 pkgver=2020.07
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="https://gitlab.manjaro.org/packages/community/manjaro-asian-input-support"
 license=('GPL')
 source=(
 	'enable-fcitx.sh'
-	'enable-fcitx5.sh'
 	'enable-ibus.sh'
 	'fcitx5.desktop'
 	'fcitx5.profile'
 	'ibus.desktop'
 )
 md5sums=('fdbfae1bba8012daf984a76d7004ae3e'
-         'a647ba08173b10b0dfaf1fdd693035e9'
          'b974be25b7f91c392009cb8d9f1bd5b4'
          '97a5be2b8ff8c0fc895d9ef21531e698'
          '3578677a7102c9f8be3b9f7ea7d3d06f'
@@ -90,7 +88,7 @@ package_manjaro-asian-input-support-fcitx5() {
 		"$pkgbase-fcitx"
 		"$pkgbase-ibus"
 	)
-	install -Dm644 "$srcdir/enable-fcitx5.sh" "$pkgdir/etc/profile.d/input-support.sh"
+	install -Dm644 "$srcdir/enable-fcitx.sh" "$pkgdir/etc/profile.d/input-support.sh"
 	install -Dm644 "$srcdir/fcitx5.desktop" "$pkgdir/etc/xdg/autostart/fcitx5.desktop"
-	install -Dm644 "$srcdir/fcitx5.profile" "$pkgdir/usr/share/$pkgname/profile"
+	install -Dm644 "$srcdir/fcitx5.profile" "$pkgdir/etc/xdg/fcitx5/profile"
 }
