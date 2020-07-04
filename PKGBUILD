@@ -20,10 +20,10 @@ source=(
 	'ibus.desktop'
 )
 md5sums=('fdbfae1bba8012daf984a76d7004ae3e'
-         'b974be25b7f91c392009cb8d9f1bd5b4'
-         '97a5be2b8ff8c0fc895d9ef21531e698'
-         '3578677a7102c9f8be3b9f7ea7d3d06f'
-         'f1a9f3406f8268383149889f4816cd52')
+	'b974be25b7f91c392009cb8d9f1bd5b4'
+	'97a5be2b8ff8c0fc895d9ef21531e698'
+	'3578677a7102c9f8be3b9f7ea7d3d06f'
+	'f1a9f3406f8268383149889f4816cd52')
 install=input-support.install
 
 pkgver() {
@@ -50,8 +50,8 @@ package_manjaro-asian-input-support-ibus() {
 package_manjaro-asian-input-support-fcitx() {
 	pkgdesc='Manjaro asian input support for fcitx'
 	depends=(
-		'fcitx-qt5'          # QT input module
-		'fcitx-configtool'   # gui configuration tool
+		'fcitx-qt5'        # QT input module
+		'fcitx-configtool' # gui configuration tool
 	)
 	optdepends=(
 		'kcm-fcitx: KDE configuration module'
@@ -73,8 +73,8 @@ package_manjaro-asian-input-support-fcitx() {
 package_manjaro-asian-input-support-fcitx5() {
 	pkgdesc='Manjaro asian input support for fcitx5'
 	depends=(
-		'fcitx5-qt'             # QT input module
-		'fcitx5-gtk'            # GTK input module
+		'fcitx5-qt'  # QT input module
+		'fcitx5-gtk' # GTK input module
 	)
 	optdepends=(
 		'kcm-fcitx5: KDE configuration module'
