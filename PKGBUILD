@@ -34,6 +34,7 @@ pkgver() {
 
 package_manjaro-asian-input-support-ibus() {
 	pkgdesc='Manjaro asian input support for ibus'
+	depends=('ibus')
 	optdepends=(
 		'ibus-libpinyin: 中文 | Chinese'
 		'ibus-anthy: 日本語 | Japanese'
