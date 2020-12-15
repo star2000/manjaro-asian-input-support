@@ -8,7 +8,7 @@ pkgname=(
 	"$pkgbase-fcitx5"
 	"$pkgbase-ibus"
 )
-pkgver=2020.08
+pkgver=2020.12
 pkgrel=1
 arch=('any')
 url="https://gitlab.manjaro.org/packages/community/manjaro-asian-input-support"
