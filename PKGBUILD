@@ -1,5 +1,6 @@
 # Maintainer: Stefano Capitani <stefanoatmanjarodororg>
-# Contributors: star2000 <i@star2000.work>
+# Contributor: star2000 <i@star2000.work>
+# Contributor: Sam L. Yes <manjaroyes123@outlook.com>
 
 pkgbase=manjaro-asian-input-support
 pkgname=(
