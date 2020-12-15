@@ -78,9 +78,9 @@ package_manjaro-asian-input-support-fcitx5() {
 	depends=(
 		'fcitx5-qt'  # QT input module
 		'fcitx5-gtk' # GTK input module
+		'fcitx5-configtool'
 	)
 	optdepends=(
-		'kcm-fcitx5: KDE configuration module'
 		'fcitx5-chinese-addons: 简体中文 | Simplified Chinese'
 		'fcitx5-rime: 繁體中文 | Traditional Chinese'
 		'fcitx5-anthy: 日本語 | Japanese'
