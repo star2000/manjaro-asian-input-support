@@ -1,5 +1,6 @@
 # Maintainer: Stefano Capitani <stefanoatmanjarodororg>
-# Contributors: star2000 <i@star2000.work>
+# Contributor: star2000 <i@star2000.work>
+# Contributor: Sam L. Yes <manjaroyes123@outlook.com>
 
 pkgbase=manjaro-asian-input-support
 pkgname=(
@@ -7,7 +8,7 @@ pkgname=(
 	"$pkgbase-fcitx5"
 	"$pkgbase-ibus"
 )
-pkgver=2020.08
+pkgver=2020.12
 pkgrel=1
 arch=('any')
 url="https://gitlab.manjaro.org/packages/community/manjaro-asian-input-support"
@@ -21,11 +22,11 @@ source=(
 	'ibus.desktop'
 )
 md5sums=('fdbfae1bba8012daf984a76d7004ae3e'
-         'c2db30f540511de31de3ae28224a1f97'
-         'b974be25b7f91c392009cb8d9f1bd5b4'
-         '97a5be2b8ff8c0fc895d9ef21531e698'
-         '3578677a7102c9f8be3b9f7ea7d3d06f'
-         'f1a9f3406f8268383149889f4816cd52')
+	'c2db30f540511de31de3ae28224a1f97'
+	'b974be25b7f91c392009cb8d9f1bd5b4'
+	'97a5be2b8ff8c0fc895d9ef21531e698'
+	'3578677a7102c9f8be3b9f7ea7d3d06f'
+	'f1a9f3406f8268383149889f4816cd52')
 install=input-support.install
 
 pkgver() {
@@ -34,6 +35,7 @@ pkgver() {
 
 package_manjaro-asian-input-support-ibus() {
 	pkgdesc='Manjaro asian input support for ibus'
+	depends=('ibus')
 	optdepends=(
 		'ibus-libpinyin: 中文 | Chinese'
 		'ibus-anthy: 日本語 | Japanese'
@@ -77,9 +79,9 @@ package_manjaro-asian-input-support-fcitx5() {
 	depends=(
 		'fcitx5-qt'  # QT input module
 		'fcitx5-gtk' # GTK input module
+		'fcitx5-configtool'
 	)
 	optdepends=(
-		'kcm-fcitx5: KDE configuration module'
 		'fcitx5-chinese-addons: 简体中文 | Simplified Chinese'
 		'fcitx5-rime: 繁體中文 | Traditional Chinese'
 		'fcitx5-anthy: 日本語 | Japanese'
