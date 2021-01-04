@@ -8,8 +8,8 @@ pkgname=(
 	"$pkgbase-fcitx5"
 	"$pkgbase-ibus"
 )
-pkgver=2020.12
-pkgrel=2
+pkgver=2021.01
+pkgrel=1
 arch=('any')
 url="https://gitlab.manjaro.org/packages/community/manjaro-asian-input-support"
 license=('GPL')
@@ -21,7 +21,7 @@ source=(
 	'ibus.desktop'
 )
 md5sums=('fdbfae1bba8012daf984a76d7004ae3e'
-	'c2db30f540511de31de3ae28224a1f97'
+	'22a68f6f99ddc55d9cb146ef0390f64b'
 	'b974be25b7f91c392009cb8d9f1bd5b4'
 	'3578677a7102c9f8be3b9f7ea7d3d06f'
 	'f1a9f3406f8268383149889f4816cd52')
