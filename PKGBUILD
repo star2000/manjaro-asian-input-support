@@ -8,21 +8,19 @@ pkgname=(
 	"$pkgbase-fcitx5"
 	"$pkgbase-ibus"
 )
-pkgver=2021.01
+pkgver=2021.09
 pkgrel=1
 arch=('any')
 url="https://gitlab.manjaro.org/packages/community/manjaro-asian-input-support"
 license=('GPL')
 source=(
 	'enable-fcitx.sh'
-	'enable-fcitx5.sh'
 	'enable-ibus.sh'
 	'fcitx5.profile'
 	'ibus.desktop'
 )
-md5sums=('fdbfae1bba8012daf984a76d7004ae3e'
-	'22a68f6f99ddc55d9cb146ef0390f64b'
-	'b974be25b7f91c392009cb8d9f1bd5b4'
+md5sums=('a5bcd9553acf94b9543b41d7d260793a'
+	'7928e2fb103bafb07e32d1d36a8ab8ab'
 	'3578677a7102c9f8be3b9f7ea7d3d06f'
 	'f1a9f3406f8268383149889f4816cd52')
 install=input-support.install
@@ -75,9 +73,9 @@ package_manjaro-asian-input-support-fcitx() {
 package_manjaro-asian-input-support-fcitx5() {
 	pkgdesc='Manjaro asian input support for fcitx5'
 	depends=(
-		'fcitx5-qt'  # QT input module
-		'fcitx5-gtk' # GTK input module
-		'fcitx5-configtool'
+		'fcitx5-qt'         # QT input module
+		'fcitx5-gtk'        # GTK input module
+		'fcitx5-configtool' # gui configuration tool
 	)
 	optdepends=(
 		'fcitx5-chinese-addons: 简体中文 | Simplified Chinese'
@@ -85,11 +83,12 @@ package_manjaro-asian-input-support-fcitx5() {
 		'fcitx5-anthy: 日本語 | Japanese'
 		'fcitx5-hangul: 한국어 | Korean'
 		'fcitx5-unikey: Tiếng Việt | Vietnamese'
+		'fcitx5-m17n: other languages provided by M17n(http://www.nongnu.org/m17n/)'
 	)
 	conflicts=(
 		"$pkgbase-fcitx"
 		"$pkgbase-ibus"
 	)
-	install -Dm644 "$srcdir/enable-fcitx5.sh" "$pkgdir/etc/profile.d/input-support.sh"
+	install -Dm644 "$srcdir/enable-fcitx.sh" "$pkgdir/etc/profile.d/input-support.sh"
 	install -Dm644 "$srcdir/fcitx5.profile" "$pkgdir/etc/xdg/fcitx5/profile"
 }
